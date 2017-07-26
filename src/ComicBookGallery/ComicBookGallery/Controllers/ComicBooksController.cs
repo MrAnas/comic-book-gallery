@@ -4,18 +4,14 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace ComicBooksGallery.Controllers
+namespace ComicBookGallery.Controllers
 {
-    public class ComicBookController : Controller
+    public class ComicBooksController : Controller
     {
-        public ActionResult Detail()
+        // GET: ComicBooks
+        public ActionResult Details()
         {
-           if(DateTime.Now.DayOfWeek == DayOfWeek.Monday)
-            {
-                return Redirect("/");
-            }
-
-            return Content("Welcome");
+            return View();
         }
     }
 }
